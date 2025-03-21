@@ -15,4 +15,11 @@
     <applicationListeners>
         <listener class="com.github.azimsh3r.gitammendcommitplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.azimsh3r.gitammendcommitplugin.actions.RenameCommitAction"
+                class="com.github.azimsh3r.gitammendcommitplugin.actions.RenameCommitAction"
+                text="Rename current commit">
+            <add-to-group group-id="VcsGroups" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>
